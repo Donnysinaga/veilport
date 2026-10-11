@@ -74,26 +74,7 @@ export function Header() {
           </nav>
 
           {/* Wallet connect button */}
-          <div className="flex items-center gap-3">
-            <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.03] border border-white/[0.06] text-xs font-mono text-slate-400">
-              {blockNumber ? (
-                <>
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  <span>Network Ready</span>
-                </>
-              ) : isNetworkLoading ? (
-                <>
-                  <span className="w-1.5 h-1.5 rounded-full bg-slate-500 animate-pulse" />
-                  <span>Verifying Network</span>
-                </>
-              ) : (
-                <>
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                  <span>Network Offline</span>
-                </>
-              )}
-            </div>
-
+          <div className="flex items-center">
             <button
               onClick={() => setWalletModalOpen(true)}
               className={`flex items-center gap-2.5 px-3.5 sm:px-5 py-2.5 rounded-xl font-medium text-sm transition-all duration-200 border ${
