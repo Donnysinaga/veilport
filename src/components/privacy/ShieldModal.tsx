@@ -404,7 +404,7 @@ export function ShieldModal({ isOpen, onClose, asset }: ShieldModalProps) {
         throw new Error(`Note asset mismatch: note is for ${note.asset}, but current pool is ${asset}.`);
       }
       if (note.chainId !== currentChainId) {
-        throw new Error(`Chain ID mismatch: note was created for chain ${note.chainId}, but active network is ${currentChainId}.`);
+        throw new Error(`Network mismatch: note was created for network ${note.chainId}, but active network is ${currentChainId}.`);
       }
 
       setImportedNote(note);

@@ -115,7 +115,7 @@ export function HeroSection() {
               <CheckCircle className="w-4 h-4 text-emerald-400/90" />
               <span className="text-sm font-semibold text-white tracking-wide">Primary Currencies</span>
             </div>
-            <p className="text-xs font-mono text-emerald-400/80">Native ETH &amp; USDG</p>
+            <p className="text-xs font-mono text-emerald-400/80">Supported ETH &amp; USDG</p>
             <p className="text-xs text-slate-400 mt-1.5 leading-relaxed">Base assets &amp; trusted stablecoins</p>
           </div>
         </div>

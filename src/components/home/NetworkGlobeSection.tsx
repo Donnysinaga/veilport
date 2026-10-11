@@ -7,14 +7,14 @@ import { primaryChainConfig } from "@/config/network";
 export function NetworkGlobeSection() {
   const endpoints = [
     {
-      provider: "Primary RPC Endpoint",
+      provider: "Primary Node Endpoint",
       role: "Transaction execution & direct ledger queries",
-      protocol: "HTTPS JSON-RPC",
+      protocol: "HTTPS JSON API",
     },
     {
-      provider: "Secondary RPC Endpoint",
+      provider: "Secondary Node Endpoint",
       role: "High-availability failover & node redundancy",
-      protocol: "HTTPS JSON-RPC",
+      protocol: "HTTPS JSON API",
     },
     {
       provider: "Network Block Explorer",
@@ -53,7 +53,7 @@ export function NetworkGlobeSection() {
                 <span className="silver-shimmer bg-clip-text text-transparent">Infrastructure</span>
               </h2>
               <p className="mt-4 text-base sm:text-lg text-slate-300/80 leading-relaxed max-w-xl">
-                VEILPORT connects directly to high-availability node providers with real-time state synchronization and live block explorer verification.
+                VEILPORT connects directly to high-availability node providers with continuous ledger state tracking and official block explorer verification.
               </p>
             </div>
 

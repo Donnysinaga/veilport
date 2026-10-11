@@ -203,7 +203,7 @@ export function DashboardPreview() {
             <span className="silver-shimmer bg-clip-text text-transparent">at a Glance</span>
           </h2>
           <p className="mt-5 text-base sm:text-lg text-slate-300/80 leading-relaxed max-w-2xl">
-            Track account holdings, review real-time valuations, and access privacy-focused transaction tools through a unified dashboard.
+            Track account holdings, review current portfolio valuations, and access privacy-focused transaction tools through a unified dashboard.
           </p>
         </div>
 
@@ -301,7 +301,7 @@ export function DashboardPreview() {
                         : "bg-amber-400/10 text-amber-300 border border-amber-400/20"
                     }`}
                   >
-                    {ethPrice !== null ? "LIVE" : isPriceLoading ? "FETCHING" : "UNAVAILABLE"}
+                    {ethPrice !== null ? "CURRENT" : isPriceLoading ? "FETCHING" : "UNAVAILABLE"}
                   </span>
                 </div>
                 <div className="mt-3 flex items-baseline gap-2">
@@ -475,7 +475,7 @@ export function DashboardPreview() {
                               </div>
                             </td>
                             <td className="py-4 px-4 font-mono text-xs text-slate-400">
-                              {t.isNative ? "Native" : t.symbol === "BTC" ? "Reference" : "ERC-20"}
+                              {t.isNative ? "Base" : t.symbol === "BTC" ? "Reference" : "ERC-20"}
                             </td>
                             <td className="py-4 px-4 font-mono text-white font-medium">
                               {t.symbol === "BTC" ? (
@@ -515,7 +515,7 @@ export function DashboardPreview() {
                                   </a>
                                 </div>
                               ) : (
-                                <span className="text-slate-500">Native Asset</span>
+                                <span className="text-slate-500">Base Currency</span>
                               )}
                             </td>
                             <td className="py-4 px-4 text-right">
@@ -550,7 +550,7 @@ export function DashboardPreview() {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3.5 rounded-xl bg-white/[0.02] border border-white/[0.06] text-xs font-mono text-slate-400">
                     <div className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                      <span className="text-slate-300">Live On-Chain Activity</span>
+                      <span className="text-slate-300">Verified On-Chain Activity</span>
                     </div>
                     <a
                       href={`${primaryChainConfig.explorerUrl}/address/${address}`}
@@ -599,7 +599,7 @@ export function DashboardPreview() {
                     <RefreshCw className="w-8 h-8 text-emerald-400 animate-spin mx-auto mb-3" />
                     <p className="text-sm font-medium text-slate-200">Scanning Recent Blocks...</p>
                     <p className="text-xs text-slate-400 mt-1 max-w-md mx-auto leading-relaxed">
-                      Retrieving on-chain transfer events for your account from the {primaryChainConfig.name} RPC node.
+                      Retrieving on-chain transfer events for your account from the {primaryChainConfig.name} network endpoint.
                     </p>
                   </div>
                 ) : isTxsError ? (
@@ -607,7 +607,7 @@ export function DashboardPreview() {
                     <AlertTriangle className="w-8 h-8 text-red-400 mx-auto mb-3" />
                     <p className="text-sm font-medium text-red-200">Activity Query Unavailable</p>
                     <p className="text-xs text-slate-400 mt-1 max-w-md mx-auto leading-relaxed">
-                      Unable to query recent event logs from the primary RPC endpoint. You can inspect complete transaction records on the official explorer.
+                      Unable to query recent event logs from the primary network endpoint. You can inspect complete transaction records on the official explorer.
                     </p>
                     <div className="mt-5 flex items-center justify-center gap-3">
                       <button
@@ -718,7 +718,7 @@ export function DashboardPreview() {
                     <Activity className="w-8 h-8 text-slate-500 mx-auto mb-3" />
                     <p className="text-sm font-medium text-slate-200">No transactions found in recent blocks</p>
                     <p className="text-xs text-slate-400 mt-2 max-w-xl mx-auto leading-relaxed">
-                      No USDG transfer events were detected for this address within recent blocks. Note: An empty recent activity feed does not indicate a zero balance — your verified USDG balance is read directly from the token contract (<code className="text-slate-300 font-mono">balanceOf</code>). Full historical activity and native transactions are indexed on the official block explorer.
+                      No USDG transfer events were detected for this address within recent blocks. Note: An empty recent activity feed does not indicate a zero balance — your verified USDG balance is read directly from the token contract (<code className="text-slate-300 font-mono">balanceOf</code>). Full historical activity and standard transactions are indexed on the official block explorer.
                     </p>
                     <div className="mt-5 flex items-center justify-center flex-wrap gap-3">
                       <a
