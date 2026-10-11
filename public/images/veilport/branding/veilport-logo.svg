@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 70" fill="none">
+  <defs>
+    <linearGradient id="vlSilver1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#E2E8F0" />
+      <stop offset="70%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="vlSilver2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="vlEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(4, 5) scale(0.62)">
+    <polygon points="28,34 35,28 42,42 35,46" fill="url(#vlSilver2)" opacity="0.9" />
+    <polygon points="36,28 64,28 50,52" fill="url(#vlSilver1)" />
+    <polygon points="20,38 50,86 50,62 30,34" fill="url(#vlSilver2)" />
+    <polygon points="80,38 50,86 50,62 70,34" fill="url(#vlSilver1)" />
+    <polygon points="49,84 51,84 50,87" fill="url(#vlEmerald)" />
+  </g>
+  <text x="76" y="45" fill="url(#vlSilver1)" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" letter-spacing="6">VEILPORT</text>
+</svg>

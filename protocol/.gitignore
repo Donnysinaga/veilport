@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Local build artifacts and ceremony files
+build/*.ptau
+build/*.zkey
+build/*.r1cs
+build/*.sym
+build/withdraw_js/
+
+# Local binaries
+bin/
+
+# Temporary caches
+*.tsbuildinfo

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="fvSilver1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <linearGradient id="fvSilver2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="60%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="halo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#0A0B0E" />
+  <circle cx="32" cy="32" r="29" stroke="url(#halo)" stroke-width="1.5" fill="none" />
+  <g transform="translate(8, 8) scale(0.48)">
+    <polygon points="28,34 35,28 42,42 35,46" fill="url(#fvSilver2)" opacity="0.9" />
+    <polygon points="36,28 64,28 50,52" fill="url(#fvSilver1)" />
+    <polygon points="20,38 50,86 50,62 30,34" fill="url(#fvSilver2)" />
+    <polygon points="80,38 50,86 50,62 70,34" fill="url(#fvSilver1)" />
+    <polygon points="48,84 52,84 50,87" fill="#34D399" />
+  </g>
+</svg>
