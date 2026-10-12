@@ -1,27 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <defs>
-    <linearGradient id="fvSilver1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="40%" stop-color="#CBD5E1" />
-      <stop offset="100%" stop-color="#475569" />
-    </linearGradient>
-    <linearGradient id="fvSilver2" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#E2E8F0" />
-      <stop offset="60%" stop-color="#94A3B8" />
-      <stop offset="100%" stop-color="#1E293B" />
-    </linearGradient>
-    <linearGradient id="halo" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#34D399" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0.6" />
-    </linearGradient>
-  </defs>
-  <circle cx="32" cy="32" r="30" fill="#0A0B0E" />
-  <circle cx="32" cy="32" r="29" stroke="url(#halo)" stroke-width="1.5" fill="none" />
-  <g transform="translate(8, 8) scale(0.48)">
-    <polygon points="28,34 35,28 42,42 35,46" fill="url(#fvSilver2)" opacity="0.9" />
-    <polygon points="36,28 64,28 50,52" fill="url(#fvSilver1)" />
-    <polygon points="20,38 50,86 50,62 30,34" fill="url(#fvSilver2)" />
-    <polygon points="80,38 50,86 50,62 70,34" fill="url(#fvSilver1)" />
-    <polygon points="48,84 52,84 50,87" fill="#34D399" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <style>
+    .veilport-mark { fill: #1B1B1B; }
+    @media (prefers-color-scheme: dark) {
+      .veilport-mark { fill: #F8FAFC; }
+    }
+  </style>
+  <path class="veilport-mark" d="M 12.24 22.95 L 29.72 22.95 L 32.32 23.26 L 34.52 23.97 L 36.65 25.31 L 37.91 26.49 L 39.49 28.78 L 44.61 39.80 L 46.81 45.24 L 48.70 49.25 L 49.49 51.61 L 49.49 52.95 L 49.09 53.90 L 48.07 55.08 L 46.02 56.58 L 44.84 57.76 L 44.21 58.70 L 43.74 60.12 L 43.74 61.85 L 43.98 62.80 L 45.47 66.18 L 45.55 68.15 L 45.24 69.73 L 44.61 71.07 L 43.11 73.27 L 41.14 75.32 L 39.64 76.50 L 38.54 76.97 L 36.26 77.13 L 35.55 76.90 L 35.15 76.34 L 33.97 73.27 L 32.95 71.22 L 29.48 63.11 L 24.60 52.32 L 22.87 47.99 L 18.85 39.09 L 13.26 25.86 L 12.00 23.42 L 12.00 23.10 L 12.24 22.95 Z" />
+  <path class="veilport-mark" d="M 76.19 22.87 L 87.53 22.95 L 88.00 23.34 L 85.95 27.52 L 83.12 34.68 L 80.12 41.14 L 75.64 51.85 L 73.51 56.42 L 73.27 57.21 L 68.55 67.68 L 68.55 67.92 L 67.76 69.41 L 64.92 76.19 L 64.37 76.90 L 63.98 77.05 L 61.38 77.05 L 60.99 76.74 L 60.75 75.32 L 59.88 72.88 L 58.78 71.07 L 56.73 69.02 L 51.61 65.55 L 49.02 63.03 L 48.31 61.54 L 48.23 60.36 L 48.39 59.49 L 49.25 57.84 L 50.83 55.63 L 51.54 53.98 L 51.61 52.24 L 51.14 50.67 L 51.14 49.72 L 51.38 49.09 L 53.03 45.87 L 55.16 40.51 L 59.02 31.61 L 60.51 28.62 L 61.62 26.96 L 63.35 25.23 L 64.22 24.60 L 65.95 23.73 L 67.44 23.26 L 70.04 22.95 L 76.19 22.87 Z" />
 </svg>

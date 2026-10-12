@@ -8,6 +8,14 @@ export const siteConfig = {
   chainId: 4663,
   rpcUrl: "https://rpc-robinhood.blockmachine.io",
   explorerUrl: "https://robinhoodchain.blockscout.com",
+  socials: {
+    x: "https://x.com/Veilportfun",
+    telegram: "https://t.me/Veilportrh",
+  },
+  links: {
+    x: "https://x.com/Veilportfun",
+    telegram: "https://t.me/Veilportrh",
+  },
   tokens: {
     native: {
       symbol: "ETH",
