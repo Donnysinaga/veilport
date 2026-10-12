@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ShieldCheck, ExternalLink } from "lucide-react";
 import { primaryChainConfig } from "@/config/network";
 import { siteConfig } from "@/config/site";
+import { TokenContractAddress } from "./TokenContractAddress";
 
 export function Footer() {
   return (
@@ -56,6 +57,14 @@ export function Footer() {
                   </svg>
                 </a>
               </div>
+            </div>
+
+            {/* Token Contract Address */}
+            <div className="pt-1">
+              <span className="block font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-2">
+                Token Contract
+              </span>
+              <TokenContractAddress />
             </div>
           </div>
 
